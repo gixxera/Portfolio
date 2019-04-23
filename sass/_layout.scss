@@ -1,0 +1,37 @@
+.container {
+    max-width: 170rem;
+    margin: 5rem auto;
+    box-shadow: var(--shadow-dark);
+    min-height: 55rem;
+}
+
+.content {
+    display: flex;
+    flex-direction: column;
+}
+
+.sidebar {
+    background-color: var(--color-grey3);
+    flex: 0 0 12%;
+}
+
+.main-view {
+    background-image: linear-gradient(to top left, var(--color-primary-dark), var(--color-primary-light));
+    height: 85vh;
+    text-align: center;
+}
+
+#description {
+    width: 100%;
+    padding: 5rem 20%;
+    font-size: 1.1rem;
+    color: var(--color-grey2);
+    animation: moveRight 3s ease-out;
+}
+
+#projects {
+    height: 128vh;
+    position: relative;
+}
+
+

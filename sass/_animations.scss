@@ -1,0 +1,14 @@
+@keyframes moveRight {
+    0% {
+        opacity: 0;
+        transform: translateX(-10rem);
+    }
+
+    75% {
+        transform: translateX(2rem);
+    }
+    100% {
+        opacity: 1;
+        transform: translate(0);
+    }
+}
