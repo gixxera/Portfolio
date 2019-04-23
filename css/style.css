@@ -45,7 +45,7 @@ body {
   background-color: var(--color-grey3);
   flex: 0 0 12%; }
 
-.main-view {
+#main-view {
   background-image: linear-gradient(to top left, var(--color-primary-dark), var(--color-primary-light));
   height: 85vh;
   text-align: center; }
@@ -100,7 +100,7 @@ body {
   .image__photo {
     width: 24%;
     border-radius: 500px;
-    animation: moveRight 3s ease-out; }
+    animation: moveDown 3s ease-out; }
 
 .header {
   text-align: center; }
@@ -109,9 +109,7 @@ body {
     font-size: 5rem;
     padding: 2rem 0;
     color: var(--color-grey4);
-    animation-name: moveRight;
-    animation-duration: 3s;
-    animation-timing-function: ease-out;
+    animation: moveRight 3s ease-out;
     letter-spacing: 4rem;
     transition: all .3s;
     background-image: linear-gradient(to right, var(--color-primary-dark), var(--color-grey2));
@@ -166,12 +164,73 @@ body {
     font-size: 2rem;
     color: var(--color-grey4); }
 
+.contacts__medias__icons {
+  display: flex;
+  justify-content: center;
+  margin-top: 10rem; }
+  .contacts__medias__icons .image {
+    width: 10rem;
+    height: 10rem;
+    margin: 0 2rem;
+    border-radius: 5px;
+    transition: all .3s; }
+    .contacts__medias__icons .image:hover {
+      transform: scale(1.1); }
+
+.contacts__mail {
+  text-align: center;
+  margin-top: 8rem; }
+  .contacts__mail__info {
+    text-align: center;
+    width: 100%;
+    margin-bottom: 1rem; }
+    .contacts__mail__info__field {
+      height: 3rem;
+      border-radius: 4px;
+      border: none;
+      padding-left: 0.5rem;
+      border-radius: 6px;
+      background-color: var(--color-grey4); }
+  .contacts__mail__message {
+    margin: 3rem 0; }
+    .contacts__mail__message .text-area {
+      border-radius: 5px;
+      background-color: var(--color-grey4);
+      margin-bottom: 3rem; }
+    .contacts__mail__message .button {
+      border-radius: 8px;
+      width: 25rem;
+      height: 5rem;
+      font-size: 2rem;
+      font-weight: 700;
+      background-color: var(--color-primary-light);
+      border: none;
+      color: var(--color-grey2);
+      transition: all .3s; }
+      .contacts__mail__message .button:hover {
+        transform: translateY(-3px); }
+        .contacts__mail__message .button:hover:hover::after {
+          transform: scale(1.5);
+          opacity: 0; }
+
 @keyframes moveRight {
   0% {
     opacity: 0;
     transform: translateX(-10rem); }
   75% {
     transform: translateX(2rem); }
+  100% {
+    opacity: 1;
+    transform: translate(0); } }
+
+@keyframes moveDown {
+  0% {
+    opacity: 0;
+    transform: translateY(-20rem); }
+  25% {
+    opacity: 0; }
+  75% {
+    transform: translateY(2rem); }
   100% {
     opacity: 1;
     transform: translate(0); } }

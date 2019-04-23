@@ -15,17 +15,17 @@
             <nav class="sidebar">
                 <ul class="side-nav">
                     <li class="side-nav__item side-nav__item--active">
-                        <a href="#description" class="side-nav__link">About me</a>
+                        <a href="#main-view" class="side-nav__link">About me</a>
                     </li>
                     <li class="side-nav__item">
                         <a href="#projects" class="side-nav__link">Projects</a>
                     </li>
                     <li class="side-nav__item">
-                        <a href="#" class="side-nav__link">Contacts</a>
+                        <a href="#contacts" class="side-nav__link">Contacts</a>
                     </li>
                 </ul>
             </nav>
-            <main class="main-view">
+            <main id="main-view">
                 <div class="image">
                     <img src="img/image.jpg" alt="photo Milen" class="image__photo">
                 </div>
@@ -35,7 +35,7 @@
                         passion is JavaScript and decided to develop in that area. High
                         motivation, willingness to learn and high communication ability are a
                         major part of my soft skills. Additionally I convince with always
-                        beeing hard working in order to achieve the best results.</h2>
+                        being hard working in order to achieve the best results.</h2>
                 </div>
             </main>
             <section id="projects">
@@ -83,12 +83,53 @@
                             class="project-composition__link">
                             <img src="img/website.PNG" alt="website image" class="project-composition__image">
                         </a>
-                        <span class="project-composition__title">Bulgarian Beautiful Sea Coast</span>
+                        <span class="project-composition__title">The beauty of the bulgarian black sea coast</span>
                     </div>
                 </div>
             </section>
+            <section id="contacts">
+                <div class="header">
+                    <h1 class="header__text">Contacts</h1>
+                </div>
+                <div class="contacts__medias">
+                    <div class="contacts__medias__icons">
+                        <a href="https://www.facebook.com/mLnMinchev" target="_blank"><img class="image"
+                                src="img/facebook.png" alt="facebook"></img></a>
+                        <a href="https://www.instagram.com/milen.minchevv/" target="_blank"><img class="image"
+                                src="img/instagram.PNG" alt="instagram"></img></a>
+                        <a href="https://www.linkedin.com/in/milen-minchev-0049a213b/" target="_blank"><img
+                                class="image" src="img/linkedin.PNG" alt="linkedin"></img></a>
+                        <a href="https://github.com/gixxera" target="_blank"><img class="image" src="img/github.PNG"
+                                alt="github"></img></a>
+                    </div>
+                </div>
+                <!-- <div class="contacts__mail">
+                    <div class="contacts__mail__info">
+
+                    </div>
+
+                    <div class="contacts__mail__message">
+                        
+                    </div>
+                </div> -->
+
+                <form class="contacts__mail">
+                    <div class="contacts__mail__info">
+                        <input class="contacts__mail__info__field" type="text" placeholder="Enter your name">
+                        <input class="contacts__mail__info__field" type="text" placeholder="Enter your email">
+                    </div>
+                    <div class="contacts__mail__message">
+                        <textarea class="text-area" cols="60" rows="10"></textarea>
+                        <div class="contacts__mail__button">
+                            <button class="button">Send your email</button>
+                        </div>
+                    </div>
+
+                </form>
+            </section>
         </div>
     </div>
+
 </body>
 
 </html>
