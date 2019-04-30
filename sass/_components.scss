@@ -79,6 +79,8 @@
             cursor: pointer;
         }
     }
+
+
 }
 
 .bg-video {
@@ -132,6 +134,10 @@
         background-color: var(--color-grey4);
         font-size: 2rem;
         color: var(--color-black);
+
+        @media only screen and (max-width: $bp-font) {
+            height: 7rem;
+        }
     }
 
     &__instruction {
@@ -139,6 +145,8 @@
         color: var(--color-grey4);
     }
 }
+
+
 
 .contacts__medias__icons {
     display: flex;

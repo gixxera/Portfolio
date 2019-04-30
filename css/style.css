@@ -32,10 +32,13 @@ body {
   min-height: 100vh; }
 
 .container {
-  max-width: 170rem;
+  max-width: 150rem;
   margin: 5rem auto;
   box-shadow: var(--shadow-dark);
   min-height: 55rem; }
+  @media only screen and (max-width: 93em) {
+    .container {
+      margin: 0; } }
 
 .content {
   display: flex;
@@ -47,8 +50,14 @@ body {
 
 #main-view {
   background-image: linear-gradient(to top left, var(--color-primary-dark), var(--color-primary-light));
-  height: 85vh;
+  height: 75vh;
   text-align: center; }
+  @media only screen and (max-width: 58em) {
+    #main-view {
+      height: 50vh; } }
+  @media only screen and (max-height: 48em) {
+    #main-view {
+      height: 110vh; } }
 
 #description {
   width: 100%;
@@ -58,8 +67,14 @@ body {
   animation: moveRight 3s ease-out; }
 
 #projects {
-  height: 128vh;
+  height: 110vh;
   position: relative; }
+  @media only screen and (max-width: 86em) {
+    #projects {
+      height: 130vh; } }
+  @media only screen and (max-height: 48em) {
+    #projects {
+      height: 180vh; } }
 
 .side-nav {
   font-size: 1.4rem;
@@ -160,6 +175,9 @@ body {
     background-color: var(--color-grey4);
     font-size: 2rem;
     color: var(--color-black); }
+    @media only screen and (max-width: 86em) {
+      .project-composition__title {
+        height: 7rem; } }
   .project-composition__instruction {
     font-size: 2rem;
     color: var(--color-grey4); }

@@ -1,9 +1,13 @@
 .container {
-    max-width: 170rem;
+    max-width: 150rem;
     margin: 5rem auto;
     box-shadow: var(--shadow-dark);
     min-height: 55rem;
-}
+
+    @media only screen and (max-width: $bp-largest) {
+        margin: 0;
+    }
+ }
 
 .content {
     display: flex;
@@ -17,8 +21,16 @@
 
 #main-view {
     background-image: linear-gradient(to top left, var(--color-primary-dark), var(--color-primary-light));
-    height: 85vh;
+    height: 75vh;
     text-align: center;
+
+    @media only screen and (max-width: $bp-large) {
+        height: 50vh;
+    }
+
+    @media only screen and (max-height: $bp-med) {
+        height: 110vh;
+    }
 }
 
 #description {
@@ -30,8 +42,16 @@
 }
 
 #projects {
-    height: 128vh;
+    height: 110vh;
     position: relative;
+
+    @media only screen and (max-width: $bp-font) {
+        height: 130vh;
+    }
+
+    @media only screen and (max-height: $bp-med) {
+        height: 180vh;
+    }
 }
 
 
