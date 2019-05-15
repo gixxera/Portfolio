@@ -78,7 +78,8 @@ body {
 
 .side-nav {
   font-size: 1.4rem;
-  list-style: none; }
+  list-style: none;
+  letter-spacing: 0.5rem; }
   .side-nav__item {
     position: relative; }
     .side-nav__item:not(:last-child) {
