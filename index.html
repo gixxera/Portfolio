@@ -92,14 +92,14 @@
                 </div>
                 <div class="contacts__medias">
                     <div class="contacts__medias__icons">
-                        <a href="https://www.facebook.com/mLnMinchev" target="_blank"><img class="image"
-                                src="img/facebook.png" alt="facebook"></img></a>
-                        <a href="https://www.instagram.com/milen.minchevv/" target="_blank"><img class="image"
-                                src="img/instagram.PNG" alt="instagram"></img></a>
-                        <a href="https://www.linkedin.com/in/milen-minchev-0049a213b/" target="_blank"><img
-                                class="image" src="img/linkedin.PNG" alt="linkedin"></img></a>
-                        <a href="https://github.com/gixxera" target="_blank"><img class="image" src="img/github.PNG"
-                                alt="github"></img></a>
+                        <a class="img-holder" href="https://www.facebook.com/mLnMinchev" target="_blank"><img
+                                class="image" src="img/facebook.png" alt="facebook"></img></a>
+                        <a class="img-holder" href="https://www.instagram.com/milen.minchevv/" target="_blank"><img
+                                class="image" src="img/instagram.PNG" alt="instagram"></img></a>
+                        <a class="img-holder" href="https://www.linkedin.com/in/milen-minchev-0049a213b/"
+                            target="_blank"><img class="image" src="img/linkedin.PNG" alt="linkedin"></img></a>
+                        <a class="img-holder" href="https://github.com/gixxera" target="_blank"><img class="image"
+                                src="img/github.PNG" alt="github"></img></a>
                     </div>
                 </div>
                 <form action="mailto:mlnminchevv@gmail.com" method="POST" enctype="text/plain" class="contacts__mail"
@@ -112,7 +112,7 @@
                     <div class="contacts__mail__message">
                         <textarea id="message" class="text-area" cols="60" rows="10"></textarea>
                         <div class="contacts__mail__button">
-                            <button class="button">Send your email</button>
+                            <input type="submit" id="submit-btn" class="button" value="Send your email"></input>
                         </div>
                     </div>
 
@@ -120,6 +120,7 @@
             </section>
         </div>
     </div>
+    <script src="app.js"></script>
 </body>
 
 </html>
